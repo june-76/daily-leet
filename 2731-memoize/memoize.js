@@ -7,6 +7,8 @@ function memoize(fn) {
     // let memory = new Map();
     const memory = new Map();
 
+    // callCount?
+
     return function(...args) {
         const key = JSON.stringify(args);
 
